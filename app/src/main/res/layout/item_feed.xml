@@ -1,0 +1,156 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="FeedItemBinding" />
+
+    <LinearLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_large"
+        android:paddingTop="@dimen/padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding"
+            android:paddingTop="@dimen/padding">
+
+            <com.an.paginglibrary.sample.views.CircleImageView
+                android:id="@+id/item_profile_img"
+                android:layout_width="@dimen/item_feed_profile_size"
+                android:layout_height="@dimen/item_feed_profile_size"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_placeholder" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_toRightOf="@+id/item_profile_img">
+
+                <com.an.customfontview.CustomTextView
+                    android:id="@+id/item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/font_xmedium"
+                    app:textFontPath="fonts/gt_medium.otf" />
+
+
+                <com.an.customfontview.CustomTextView
+                    android:id="@+id/item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_title"
+                    android:layout_marginTop="@dimen/margin_xsmall"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/font_small"
+                    app:textFontPath="fonts/montserrat_regular.otf" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <com.an.customfontview.CustomTextView
+            android:id="@+id/item_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_xsmall"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="@dimen/margin_large"
+            android:lineSpacingExtra="2dp"
+            android:paddingLeft="@dimen/padding"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/font_xmedium"
+            android:visibility="gone"
+            app:textFontPath="fonts/gt_medium.otf" />
+
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/feed_image_height"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:scaleType="fitXY" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:layout_marginLeft="@dimen/margin_xsmall"
+            android:layout_marginTop="@dimen/margin_large"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/img_likes"
+                android:layout_width="@dimen/image_like_width"
+                android:layout_height="@dimen/image_like_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_reaction" />
+
+
+            <com.an.customfontview.CustomTextView
+                android:id="@+id/item_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_xlarge"
+                android:layout_marginTop="-2dp"
+                android:layout_toRightOf="@+id/img_likes"
+                android:text="170"
+                android:textColor="@color/title_txt"
+                android:textSize="@dimen/font_small"
+                app:textFontPath="fonts/montserrat_regular.otf" />
+
+
+            <com.an.customfontview.CustomTextView
+                android:id="@+id/item_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/margin_xxlarge"
+                android:layout_marginTop="-2dp"
+                android:text="1.6K Comments"
+                android:textColor="@color/title_txt"
+                android:textSize="@dimen/font_small"
+                app:textFontPath="fonts/montserrat_regular.otf" />
+
+
+            <com.an.customfontview.CustomTextView
+                android:id="@+id/item_shares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_xlarge"
+                android:layout_marginTop="-2dp"
+                android:text="50K Shares"
+                android:textColor="@color/title_txt"
+                android:textSize="@dimen/font_small"
+                app:textFontPath="fonts/montserrat_regular.otf" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/margin_xsmall"
+            android:background="@color/color_line" />
+
+    </LinearLayout>
+</layout>

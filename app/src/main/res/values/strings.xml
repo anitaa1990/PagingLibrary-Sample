@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PagingLibrary-Sample</string>
+
+    <string name="btn_like">Like</string>
+    <string name="btn_comment">Comment</string>
+    <string name="btn_share">Share</string>
+    <string name="item_title" formatted="false">%s posted %s</string>
+    <string name="item_date" formatted="false">%s at %s</string>
+    <string name="item_likes" formatted="false">%s Likes</string>
+    <string name="author_name" formatted="false">Anonymous</string>
+
+</resources>

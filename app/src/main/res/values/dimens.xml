@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="scanner_rect_width">250</integer>
+    <integer name="scanner_rect_height">250</integer>
+    <integer name="line_width">4</integer>
+    <integer name="line_speed">5</integer>
+
+
+    <dimen name="padding_xxsmall">4dp</dimen>
+    <dimen name="padding_xsmall">5dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+
+    <dimen name="padding">10dp</dimen>
+    <dimen name="padding_xmedium">11dp</dimen>
+
+
+    <dimen name="padding_small_medium">12dp</dimen>
+    <dimen name="padding_medium">14dp</dimen>
+    <dimen name="padding_large">15dp</dimen>
+    <dimen name="padding_medium_large">16dp</dimen>
+    <dimen name="padding_mm_large">18dp</dimen>
+    <dimen name="padding_xlarge">22dp</dimen>
+    <dimen name="padding_xxlarge">25dp</dimen>
+    <dimen name="padding_xx_xlarge">26dp</dimen>
+    <dimen name="padding_xxxlarge">28dp</dimen>
+    <dimen name="padding_xxxxlarge">32dp</dimen>
+
+
+    <dimen name="margin_xsmall">3dp</dimen>
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="margin_large">15dp</dimen>
+    <dimen name="margin_medium">13dp</dimen>
+    <dimen name="margin_xlarge">20dp</dimen>
+    <dimen name="margin_xxlarge">22dp</dimen>
+    <dimen name="margin_xx_medium_large">24dp</dimen>
+    <dimen name="margin_xxxlarge">29dp</dimen>
+    <dimen name="margin_xxxxlarge">35dp</dimen>
+    <dimen name="margin_xxxxxlarge">40dp</dimen>
+    <dimen name="margin_xxxxxxlarge">45dp</dimen>
+    <dimen name="margin_xxxxxxxlarge">56dp</dimen>
+    <dimen name="btn_scan_padding_left">85dp</dimen>
+
+    <dimen name="font_xxxxxsmall">3sp</dimen>
+    <dimen name="font_xxxxsmall">6sp</dimen>
+    <dimen name="font_xxxsmall">8sp</dimen>
+    <dimen name="font_xxsmall">10sp</dimen>
+    <dimen name="font_xsmall">11sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_xmedium">14sp</dimen>
+    <dimen name="font_medium">16sp</dimen>
+    <dimen name="font_x_medium_large">17sp</dimen>
+    <dimen name="font_medium_large">18sp</dimen>
+    <dimen name="font_large">20sp</dimen>
+    <dimen name="font_xlarge">22sp</dimen>
+    <dimen name="font_xxlarge">30sp</dimen>
+    <dimen name="font_xxxlarge">40sp</dimen>
+
+    <dimen name="feed_profile_size">40dp</dimen>
+    <dimen name="item_feed_profile_size">45dp</dimen>
+    <dimen name="item_page_image_size">190dp</dimen>
+    <dimen name="scanner_rect_size">350dp</dimen>
+    <dimen name="detail_page_logo_size">70dp</dimen>
+    <dimen name="detail_page_logo_btn_size">45dp</dimen>
+    <dimen name="qr_code_result_image">70dp</dimen>
+    <dimen name="shine_btn_size">20dp</dimen>
+    <dimen name="gallery_btn_size">25dp</dimen>
+
+    <dimen name="btn_scan_width">28dp</dimen>
+    <dimen name="btn_scan_height">29dp</dimen>
+    <dimen name="detail_page_image_height">80dp</dimen>
+    <dimen name="feed_image_height">200dp</dimen>
+
+    <dimen name="image_like_width">55dp</dimen>
+    <dimen name="image_like_height">14dp</dimen>
+
+</resources>
