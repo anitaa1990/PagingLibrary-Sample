@@ -33,7 +33,7 @@ public class FeedActivity extends AppCompatActivity {
          * Step 2: Initialize the ViewModel
          *
          * */
-        feedViewModel = ViewModelProviders.of(this).get(FeedViewModel.class);
+        feedViewModel = new FeedViewModel(AppController.create(this));
 
         /*
          * Step 2: Setup the adapter class for the RecyclerView
