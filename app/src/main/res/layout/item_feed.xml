@@ -1,8 +1,6 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <data class="FeedItemBinding" />
-
     <LinearLayout
         android:id="@+id/root_view"
         android:layout_width="match_parent"
@@ -24,7 +22,7 @@
                 android:layout_width="@dimen/item_feed_profile_size"
                 android:layout_height="@dimen/item_feed_profile_size"
                 android:layout_alignParentLeft="true"
-                android:src="@drawable/ic_placeholder" />
+                android:src="@mipmap/ic_placeholder" />
 
 
             <RelativeLayout
@@ -99,7 +97,8 @@
                 android:layout_height="@dimen/image_like_height"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
-                android:src="@drawable/ic_reaction" />
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_reaction" />
 
 
             <com.an.customfontview.CustomTextView

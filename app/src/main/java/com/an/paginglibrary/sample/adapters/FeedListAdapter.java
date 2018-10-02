@@ -13,8 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.an.paginglibrary.sample.R;
-import com.an.paginglibrary.sample.databinding.FeedItemBinding;
-import com.an.paginglibrary.sample.databinding.NetworkItemBinding;
+import com.an.paginglibrary.sample.databinding.ItemNetworkStateBinding;
+import com.an.paginglibrary.sample.databinding.ItemFeedBinding;
 import com.an.paginglibrary.sample.model.Article;
 import com.an.paginglibrary.sample.utils.AppUtils;
 import com.an.paginglibrary.sample.utils.NetworkState;
@@ -37,12 +37,12 @@ public class FeedListAdapter extends PagedListAdapter<Article, RecyclerView.View
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         if(viewType == TYPE_PROGRESS) {
-            NetworkItemBinding headerBinding = NetworkItemBinding.inflate(layoutInflater, parent, false);
+            ItemNetworkStateBinding headerBinding = ItemNetworkStateBinding.inflate(layoutInflater, parent, false);
             NetworkStateItemViewHolder viewHolder = new NetworkStateItemViewHolder(headerBinding);
             return viewHolder;
 
         } else {
-            FeedItemBinding itemBinding = FeedItemBinding.inflate(layoutInflater, parent, false);
+            ItemFeedBinding itemBinding = ItemFeedBinding.inflate(layoutInflater, parent, false);
             ArticleItemViewHolder viewHolder = new ArticleItemViewHolder(itemBinding);
             return viewHolder;
         }
@@ -94,8 +94,8 @@ public class FeedListAdapter extends PagedListAdapter<Article, RecyclerView.View
 
     public class ArticleItemViewHolder extends RecyclerView.ViewHolder {
 
-        private FeedItemBinding binding;
-        public ArticleItemViewHolder(FeedItemBinding binding) {
+        private ItemFeedBinding binding;
+        public ArticleItemViewHolder(ItemFeedBinding binding) {
             super(binding.getRoot());
             this.binding = binding;
         }
@@ -119,8 +119,8 @@ public class FeedListAdapter extends PagedListAdapter<Article, RecyclerView.View
 
     public class NetworkStateItemViewHolder extends RecyclerView.ViewHolder {
 
-        private NetworkItemBinding binding;
-        public NetworkStateItemViewHolder(NetworkItemBinding binding) {
+        private ItemNetworkStateBinding binding;
+        public NetworkStateItemViewHolder(ItemNetworkStateBinding binding) {
             super(binding.getRoot());
             this.binding = binding;
         }
