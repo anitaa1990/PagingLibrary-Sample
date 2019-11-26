@@ -8,6 +8,7 @@ import android.util.Log;
 
 import com.an.paginglibrary.sample.AppController;
 import com.an.paginglibrary.sample.BaseConstants;
+import com.an.paginglibrary.sample.BuildConfig;
 import com.an.paginglibrary.sample.model.Article;
 import com.an.paginglibrary.sample.model.Feed;
 import com.an.paginglibrary.sample.utils.NetworkState;
@@ -49,7 +50,7 @@ public class FeedDataSource extends PageKeyedDataSource<Long, Article> implement
         initialLoading.postValue(NetworkState.LOADING);
         networkState.postValue(NetworkState.LOADING);
 
-        appController.getRestApi().fetchFeed(QUERY, API_KEY, 1, params.requestedLoadSize)
+        appController.getRestApi().fetchFeed(QUERY, BuildConfig.API_KEY, 1, params.requestedLoadSize)
                 .enqueue(new Callback<Feed>() {
                     @Override
                     public void onResponse(Call<Feed> call, Response<Feed> response) {
@@ -86,7 +87,7 @@ public class FeedDataSource extends PageKeyedDataSource<Long, Article> implement
 
         networkState.postValue(NetworkState.LOADING);
 
-        appController.getRestApi().fetchFeed(QUERY, API_KEY, params.key, params.requestedLoadSize).enqueue(new Callback<Feed>() {
+        appController.getRestApi().fetchFeed(QUERY, BuildConfig.API_KEY, params.key, params.requestedLoadSize).enqueue(new Callback<Feed>() {
             @Override
             public void onResponse(Call<Feed> call, Response<Feed> response) {
                 if(response.isSuccessful()) {

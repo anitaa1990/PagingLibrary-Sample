@@ -45,3 +45,5 @@ build/
 .DS_Store
 app/.DS_Store
 .idea
+
+apiKey.properties
